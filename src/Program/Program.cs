@@ -1,12 +1,16 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace PII_Game_Of_Life
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Board board1= LeerArchivo.TableroNuevo();
+            while(true)
+            {
+                board1 = ImprimirTablero.ImpTablero(board1);
+            }
         }
     }
 }
